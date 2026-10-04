@@ -1189,90 +1189,55 @@
         margin-top: 0.15rem;
       }
 
-      /* Payment Poster */
-      .payment-poster {
+      /* Site Delivery Checklist */
+      .delivery-checklist {
         margin-top: 1.25rem;
-        display: grid;
-        grid-template-columns: 1.2fr 1fr;
-        gap: 0;
-        border-radius: 0 0 24px 24px;
+        border-radius: 20px;
         overflow: hidden;
+        background: #edf5f8;
         box-shadow: 0 18px 42px rgba(0, 61, 82, 0.12);
         width: 100%;
       }
-      .payment-left {
-        background: #edf5f8;
+      .delivery-checklist-inner {
         padding: clamp(1.25rem, 3vw, 2.8rem) clamp(1rem, 2vw, 2rem);
       }
-      .payment-left h2 {
+      .delivery-checklist h2 {
         font-family: var(--font-heading);
         font-weight: 900;
-        font-size: clamp(1.6rem, 4vw, 4.2rem);
+        font-size: clamp(1.5rem, 3vw, 2.6rem);
         color: var(--deep-ocean);
-        letter-spacing: -0.06em;
-        margin: 0 0 0.8rem;
-        line-height: 0.9;
+        margin: 0;
+        line-height: 1;
       }
-      .payment-rules {
-        display: grid;
-        gap: 1rem;
-        margin-top: 1.2rem;
+      .delivery-checklist-intro {
+        color: var(--text-mid);
+        margin-top: 0.45rem;
       }
-      .policy-item {
+      .delivery-checklist-grid {
         display: grid;
-        grid-template-columns: 80px 1fr;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 0.8rem;
-        align-items: center;
+        margin-top: 1.25rem;
       }
-      .policy-icon {
-        width: 80px;
-        height: 80px;
-        border: 4px solid #ff8c3a;
-        border-radius: 50%;
+      .delivery-checklist-item {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 2rem;
-        color: #ff8c3a;
-        background: rgba(255, 255, 255, 0.7);
+        align-items: flex-start;
+        gap: 0.65rem;
+        min-height: 100%;
+        padding: 0.9rem;
+        border: 1px solid rgba(0, 61, 82, 0.1);
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.72);
+        color: var(--text-mid);
       }
-      .policy-stat {
-        font-family: var(--font-heading);
-        font-size: clamp(1.8rem, 4vw, 4rem);
-        font-weight: 900;
-        line-height: 0.9;
-        color: var(--deep-ocean);
+      .delivery-checklist-item i {
+        margin-top: 0.2rem;
+        color: var(--sunset);
       }
-      .policy-stat .muted {
-        color: #ff8c3a;
-      }
-      .policy-copy {
-        color: var(--deep-ocean);
-        font-size: clamp(0.8rem, 1vw, 1.04rem);
-        line-height: 1.35;
-      }
-      .policy-copy strong {
+      .delivery-checklist-item strong {
         display: block;
-        font-size: clamp(0.85rem, 1vw, 1.1rem);
-        letter-spacing: -0.02em;
-        margin-bottom: 0.15rem;
-      }
-      .payment-right {
-        position: relative;
-        min-height: 300px;
-        background: #dfeef3;
-      }
-      .payment-right img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-      }
-      .payment-right::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(90deg, rgba(255, 140, 58, 0.2), rgba(255, 140, 58, 0));
+        color: var(--deep-ocean);
+        margin-bottom: 0.2rem;
       }
 
       /* Mini Brand Bar */
@@ -1308,13 +1273,11 @@
          RESPONSIVE: HERO
          ============================================================ */
       @media (max-width: 1024px) {
-        .poster-grid,
-        .payment-poster {
+        .poster-grid {
           grid-template-columns: 1fr;
         }
         .poster-copy,
-        .poster-photo,
-        .payment-right {
+        .poster-photo {
           border-radius: 24px;
         }
         .poster-copy {
@@ -1322,12 +1285,6 @@
         }
         .poster-photo {
           min-height: 240px;
-        }
-        .payment-poster {
-          border-radius: 24px;
-        }
-        .payment-right {
-          min-height: 220px;
         }
       }
       @media (max-width: 768px) {
@@ -1376,31 +1333,17 @@
           gap: 0.5rem;
           margin-top: 0.6rem;
         }
-        .payment-left {
-          padding: 1rem 1rem 1.25rem;
+        .delivery-checklist-inner {
+          padding: 1rem;
         }
-        .payment-left h2 {
-          font-size: clamp(1.4rem, 6vw, 2.4rem);
-          margin-bottom: 0.6rem;
+        .delivery-checklist-grid {
+          grid-template-columns: 1fr;
+          gap: 0.55rem;
+          margin-top: 0.9rem;
         }
-        .policy-item {
-          grid-template-columns: 60px 1fr;
-          gap: 0.6rem;
-        }
-        .policy-icon {
-          width: 60px;
-          height: 60px;
-          font-size: 1.6rem;
-          border-width: 3px;
-        }
-        .policy-copy {
-          font-size: 0.8rem;
-        }
-        .policy-copy strong {
+        .delivery-checklist-item {
+          padding: 0.75rem;
           font-size: 0.85rem;
-        }
-        .policy-stat {
-          font-size: 1.6rem;
         }
         .trust-bar {
           grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1424,14 +1367,6 @@
           padding: 0.4rem 0.7rem;
           font-size: 0.65rem;
           min-height: 34px;
-        }
-        .payment-poster {
-          border-radius: 20px;
-          margin-top: 1rem;
-        }
-        .payment-right {
-          min-height: 160px;
-          border-radius: 20px;
         }
       }
       @media (max-width: 480px) {
@@ -1475,34 +1410,10 @@
         .trust-stat span {
           font-size: 0.55rem;
         }
-        .payment-left h2 {
-          font-size: 1.2rem;
-        }
-        .policy-icon {
-          width: 48px;
-          height: 48px;
-          font-size: 1.2rem;
-        }
-        .policy-item {
-          grid-template-columns: 48px 1fr;
-          gap: 0.5rem;
-        }
-        .policy-copy {
-          font-size: 0.7rem;
-        }
-        .policy-copy strong {
-          font-size: 0.75rem;
-        }
-        .policy-stat {
-          font-size: 1.2rem;
-        }
         .mini-brand-pill {
           font-size: 0.55rem;
           padding: 0.3rem 0.5rem;
           min-height: 30px;
-        }
-        .payment-right {
-          min-height: 120px;
         }
       }
       @media (max-width: 360px) {
@@ -3821,30 +3732,27 @@
             </div>
           </div>
 
-          <!-- Payment Policy -->
-          <div class="payment-poster fade-in">
-            <div class="payment-left">
-              <h2>OUR PAYMENT<br />POLICY</h2>
-              <div class="payment-rules">
-                <div class="policy-item">
-                  <div class="policy-icon"><i class="fas fa-credit-card"></i></div>
-                  <div class="policy-copy">
-                    <div class="policy-stat">30<span class="muted">%</span></div>
-                    <strong>BEFORE DELIVERY</strong>
-                    Advance payment required before delivery to commence processing, packaging, and dispatch of your order.
-                  </div>
+          <!-- Site Delivery Checklist -->
+          <section class="delivery-checklist fade-in" aria-labelledby="deliveryChecklistTitle">
+            <div class="delivery-checklist-inner">
+              <h2 id="deliveryChecklistTitle">Make site delivery smoother</h2>
+              <p class="delivery-checklist-intro">A few details help your materials arrive ready for the next stage of work.</p>
+              <div class="delivery-checklist-grid">
+                <div class="delivery-checklist-item">
+                  <i class="fas fa-truck" aria-hidden="true"></i>
+                  <span><strong>Check truck access</strong>Share any narrow entrances, height limits, or access restrictions.</span>
                 </div>
-                <div class="policy-item">
-                  <div class="policy-icon"><i class="fas fa-map-marker-alt"></i></div>
-                  <div class="policy-copy">
-                    <div class="policy-stat">70<span class="muted">%</span></div>
-                    <strong>WILL BE PAID ON SITE</strong>
-                    Balance payment payable on-site upon successful delivery and verification of the materials.
-                  </div>
+                <div class="delivery-checklist-item">
+                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                  <span><strong>Choose an unloading point</strong>Identify a clear, practical place for materials to be unloaded.</span>
+                </div>
+                <div class="delivery-checklist-item">
+                  <i class="fas fa-clipboard-check" aria-hidden="true"></i>
+                  <span><strong>Arrange a site contact</strong>Have someone available to receive and check the delivered items.</span>
                 </div>
               </div>
             </div>
-          </div>
+          </section>
 
           <!-- Mini Brand Bar -->
           <div class="mini-brand-bar">
