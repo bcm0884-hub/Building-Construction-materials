@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#303a7a" />
+    <title>Simba Cement | Quality Changes the Nation</title>
+    <meta name="description" content="Simba Cement 32.5R and Simba Power 42.5N from National Cement Company Limited, a member of Devki Group. Find the right cement for your project." />
+    <meta property="og:title" content="Simba Cement | Quality Changes the Nation" />
+    <meta property="og:description" content="Kenyan-made cement for everyday building and specialized construction." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/hero.jpg" />
+    <link rel="icon" href="assets/simba-mark.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="site.js" defer></script>
+  </head>
+  <body>
+    <div id="siteHeader"></div>
+    <main id="main">
+      <section class="hero" aria-labelledby="heroTitle">
+        <img class="hero-image" src="assets/hero.jpg" alt="" />
+        <div class="container hero-content">
+          <span class="eyebrow">Simba Cement · Made in Kenya</span>
+          <h1 id="heroTitle">Quality <em>changes</em> the nation.</h1>
+          <p class="hero-copy">From family homes to highways and high-rise towers, Simba Cement is made to give builders strength they can rely on, project after project.</p>
+          <div class="hero-actions">
+            <a class="button button-gold" href="products.html">Explore our products <span class="button-arrow" aria-hidden="true">→</span></a>
+            <button class="button button-outline" type="button" data-contact-modal>Make an enquiry <span class="button-arrow" aria-hidden="true">→</span></button>
+          </div>
+        </div>
+        <p class="hero-caption">Simba Cement · Building since 2010</p>
+      </section>
+
+      <section class="intro-strip" aria-label="Why Simba Cement">
+        <div class="container intro-inner">
+          <p class="intro-heading">Strong cement for every stage of the build.</p>
+          <div class="intro-point">
+            <span class="check" aria-hidden="true">✓</span>
+            <span><strong>Locally produced</strong>Clinker made in Merueshi, Kenya</span>
+          </div>
+          <div class="intro-point">
+            <span class="check" aria-hidden="true">✓</span>
+            <span><strong>Two trusted grades</strong>32.5R and 42.5N</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section products-section" id="products" aria-labelledby="productsTitle">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Our products</span>
+            <h2 id="productsTitle">The right cement for the job.</h2>
+            <p>Choose the grade that matches your work, from general building to demanding infrastructure. Always confirm the grade against your project specification.</p>
+          </div>
+          <div class="product-grid">
+            <article class="product-card">
+              <span class="product-number">01 · GENERAL PURPOSE</span>
+              <img class="product-image" src="assets/simba-cement-32-5r.png" alt="Simba Cement 32.5R bag" width="401" height="622" loading="lazy" />
+              <h3>Simba Cement 32.5R</h3>
+              <p>Faster drying and settling, high fineness and improved coverage for everyday building work.</p>
+              <span class="product-use">Walls · Plastering · Blockwork · Foundations</span>
+              <div class="hero-actions">
+                <a class="text-link" href="simba-cement-32-5r.html">View product <span aria-hidden="true">→</span></a>
+                <button class="text-link modal-trigger" type="button" data-product-modal="cement32" style="border: 0; background: none; cursor: pointer">Quick view <span aria-hidden="true">＋</span></button>
+              </div>
+            </article>
+            <article class="product-card">
+              <span class="product-number">02 · SPECIALIZED CONSTRUCTION</span>
+              <img class="product-image" src="assets/simba-power-42-5n.png" alt="Simba Power 42.5N bag" width="350" height="546" loading="lazy" />
+              <h3>Simba Power 42.5N</h3>
+              <p>High supportive strength for structures that need to carry more and last longer.</p>
+              <span class="product-use">Bridges · Towers · Pavements · Highways · High-rise</span>
+              <div class="hero-actions">
+                <a class="text-link" href="simba-power-42-5n.html">View product <span aria-hidden="true">→</span></a>
+                <button class="text-link modal-trigger" type="button" data-product-modal="power42" style="border: 0; background: none; cursor: pointer">Quick view <span aria-hidden="true">＋</span></button>
+              </div>
+            </article>
+            <article class="product-card product-advice">
+              <span class="product-number">NOT SURE?</span>
+              <h3>Talk to our team.</h3>
+              <p>Tell us what you are building and we will point you to the right Simba Cement grade.</p>
+              <button class="button button-gold" type="button" data-contact-modal>Ask for advice <span class="button-arrow" aria-hidden="true">→</span></button>
+            </article>
+          </div>
+          <p class="product-note">Check the product packaging for standards, strength class and handling instructions.</p>
+        </div>
+      </section>
+
+      <section class="feature-section" aria-labelledby="featureTitle">
+        <div class="feature-layout">
+          <div class="feature-image-wrap">
+            <img src="assets/clinker.jpg" alt="Cement clinker at the production plant" loading="lazy" />
+            <span class="image-label">Merueshi clinker production</span>
+          </div>
+          <div class="feature-copy">
+            <span class="eyebrow">Made here, for here</span>
+            <h2 id="featureTitle">Built on local strength.</h2>
+            <p>Simba Cement is made from Kenyan resources, with clinker produced at Merueshi and cement supplied across Kenya and the wider East African region.</p>
+            <ul class="feature-list">
+              <li>Local clinker manufacturing for consistent supply</li>
+              <li>Grinding capacity expanded fivefold in 2013 to meet demand</li>
+              <li>Serving builders in Kenya and neighboring East African markets</li>
+            </ul>
+            <a class="button button-gold" href="about.html">Our story <span class="button-arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" aria-labelledby="aboutTitle">
+        <div class="container about-layout">
+          <h2 class="about-statement" id="aboutTitle">Building the nation, <span>one bag at a time.</span></h2>
+          <div class="about-copy">
+            <span class="eyebrow" style="color: #a17a17">Who we are</span>
+            <p>Simba Cement is a product of National Cement Company Limited, a member of Devki Group. Since 2010, the brand has supplied cement for homes, businesses, roads and community infrastructure.</p>
+            <p>Our range covers everyday construction and specialized engineering work, so builders, contractors and homeowners can find the right cement in one trusted name.</p>
+            <div class="about-facts">
+              <div class="about-fact"><strong>2010</strong>Simba Cement launched</div>
+              <div class="about-fact"><strong>5×</strong>Grinding capacity growth</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section assurance-section" aria-labelledby="assuranceTitle">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Why builders choose Simba</span>
+            <h2 id="assuranceTitle">Strength you can build on.</h2>
+            <p>Every bag carries the same promise: cement made for the way East Africa builds.</p>
+          </div>
+          <div class="assurance-grid">
+            <div class="assurance-item">
+              <span class="assurance-icon" aria-hidden="true">01</span>
+              <h3>Consistent quality</h3>
+              <p>Controlled production from clinker to bag for dependable results on site.</p>
+            </div>
+            <div class="assurance-item">
+              <span class="assurance-icon" aria-hidden="true">02</span>
+              <h3>Fine and workable</h3>
+              <p>High fineness for smooth mixing, better coverage and a clean finish.</p>
+            </div>
+            <div class="assurance-item">
+              <span class="assurance-icon" aria-hidden="true">03</span>
+              <h3>Grades for every job</h3>
+              <p>From a single room extension to a highway bridge, there is a Simba grade for it.</p>
+            </div>
+            <div class="assurance-item">
+              <span class="assurance-icon" aria-hidden="true">04</span>
+              <h3>Kenyan made</h3>
+              <p>Produced with local resources, supporting local jobs and local supply.</p>
+            </div>
+            <div class="assurance-item">
+              <span class="assurance-icon" aria-hidden="true">05</span>
+              <h3>Regional reach</h3>
+              <p>Available through distributors across Kenya and neighboring markets.</p>
+            </div>
+            <div class="assurance-item">
+              <span class="assurance-icon" aria-hidden="true">06</span>
+              <h3>Help when you need it</h3>
+              <p>Planning guides, downloads and a team ready to answer your questions.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section" aria-labelledby="ctaTitle">
+        <div class="container cta-inner">
+          <div>
+            <span class="eyebrow">Start your project</span>
+            <h2 id="ctaTitle">Ready to build with Simba?</h2>
+            <p>Get product advice, check availability or download our build planning checklist.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="button button-gold" href="contact.html">Contact us <span class="button-arrow" aria-hidden="true">→</span></a>
+            <a class="button button-outline" href="build-planning-guide.html">Planning checklist <span class="button-arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="siteFooter"></div>
+  </body>
+</html>
