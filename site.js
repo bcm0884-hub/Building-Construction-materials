@@ -6,14 +6,9 @@ if (headerContainer) {
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="container nav-wrap">
-        <a class="brand" href="index.html" aria-label="Simba Cement home">
-          <img
-            class="brand-logo"
-            src="assets/simba-logo.png"
-            alt="Simba Cement"
-            width="256"
-            height="80"
-          />
+        <a class="brand" href="index.html" aria-label="Micheal Onyango Factory home">
+          <span class="brand-mark" aria-hidden="true">MO</span>
+          <span class="brand-text"><strong>Micheal Onyango</strong><small>Factory</small></span>
         </a>
         <button
           class="menu-toggle"
@@ -30,6 +25,7 @@ if (headerContainer) {
           <a href="about.html" data-nav="about.html">About Us</a>
           <a href="news.html" data-nav="news.html">News Room</a>
           <a href="downloads.html" data-nav="downloads.html">Downloads</a>
+          <a class="nav-phone" href="tel:+254726866998"><span aria-hidden="true">☎</span> 0726 866 998</a>
           <a class="button button-gold" href="contact.html" data-nav="contact.html">Contact Us</a>
         </nav>
       </div>
@@ -43,16 +39,11 @@ if (footerContainer) {
       <div class="container">
         <div class="footer-grid">
           <div class="footer-brand-block">
-            <a class="brand" href="index.html" aria-label="Simba Cement home">
-              <img
-                class="brand-logo"
-                src="assets/simba-logo.png"
-                alt="Simba Cement"
-                width="256"
-                height="80"
-              />
-            </a>
-            <p class="footer-about">Simba Cement is a product of National Cement Company Limited, a member of Devki Group. Quality Changes the Nation.</p>
+            <a class="brand" href="index.html" aria-label="Micheal Onyango Factory home">
+          <span class="brand-mark" aria-hidden="true">MO</span>
+          <span class="brand-text"><strong>Micheal Onyango</strong><small>Factory</small></span>
+        </a>
+            <p class="footer-about">Micheal Onyango Factory supplies Simba Cement 32.5R and Simba Power 42.5N to builders, contractors and hardware stores. Call or WhatsApp for prices and delivery.</p>
           </div>
           <div>
             <h2>Explore</h2>
@@ -66,14 +57,14 @@ if (footerContainer) {
           <div>
             <h2>Get in touch</h2>
             <div class="footer-links">
-              <a href="tel:+254709110000">+254 709 110 000</a>
-              <a href="mailto:sales@nccke.com">sales@nccke.com</a>
+              <a href="tel:+254726866998">0726 866 998</a>
+              <a href="https://wa.me/254726866998" target="_blank" rel="noopener">WhatsApp us</a>
               <a href="contact.html">Full contact details</a>
             </div>
           </div>
         </div>
         <div class="footer-bottom">
-          <p>© <span data-current-year></span> Built by Jayden. Independent Simba Cement project, not the official National Cement website.</p>
+          <p>© <span data-current-year></span> Micheal Onyango Factory. Built by Jayden. Independent supplier, not the official National Cement website.</p>
           <p>Product specifications and availability: confirm with National Cement Company Limited.</p>
         </div>
       </div>
@@ -135,7 +126,7 @@ if (projectSelector && projectResult) {
   const projectGuidance = {
     general: "Simba Cement 32.5R is for general-purpose applications. Check that the selected cement meets your project specification.",
     specialist: "Simba Power 42.5N is for specialized construction, including bridges, towers, pavements, highways and high-rise structures. Consult your engineer and project specification.",
-    unsure: "Ask National Cement for product guidance and confirm the grade with your project engineer before purchase or use.",
+    unsure: "Call Micheal Onyango Factory on 0726 866 998 for product guidance and confirm the grade with your project engineer before purchase or use.",
   };
 
   const showProjectGuidance = () => {
@@ -151,7 +142,7 @@ const contactForm = document.querySelector("[data-contact-form]");
 if (contactForm) {
   contactForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    openEmailDraft(contactForm);
+    openWhatsAppDraft(contactForm);
   });
 }
 
@@ -176,17 +167,16 @@ const productModalContent = {
   },
 };
 
-function openEmailDraft(form) {
+function openWhatsAppDraft(form) {
   const formData = new FormData(form);
-  const subject = `Simba Cement enquiry: ${formData.get("topic")}`;
   const message = [
+    `Micheal Onyango Factory enquiry: ${formData.get("topic")}`,
     `Name: ${formData.get("name")}`,
-    `Email: ${formData.get("email")}`,
-    `Topic: ${formData.get("topic")}`,
+    `Phone: ${formData.get("phone")}`,
     "",
     formData.get("message"),
   ].join("\n");
-  window.location.href = `mailto:sales@nccke.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+  window.open(`https://wa.me/254726866998?text=${encodeURIComponent(message)}`, "_blank", "noopener");
 }
 
 function ensureModal() {
@@ -207,7 +197,7 @@ function ensureModal() {
     const form = event.target.closest("[data-modal-contact-form]");
     if (!form) return;
     event.preventDefault();
-    openEmailDraft(form);
+    openWhatsAppDraft(form);
   });
 
   return modal;
@@ -221,13 +211,13 @@ function openContactModal(trigger) {
       <button class="modal-close" type="button" aria-label="Close enquiry form" data-modal-close>×</button>
       <span class="eyebrow">Talk to our team</span>
       <h2 id="siteModalTitle">Send an enquiry</h2>
-      <p class="modal-intro">Complete the form to open a message addressed to National Cement sales. Review and send it in your email application.</p>
+      <p class="modal-intro">Complete the form to open a WhatsApp message to Micheal Onyango Factory on 0726 866 998. Prefer to talk? <a class="text-link" href="tel:+254726866998" style="display:inline-flex">Call now</a></p>
       <form class="contact-form modal-contact-form" data-modal-contact-form>
         <label for="modalContactName">Your name
           <input id="modalContactName" name="name" autocomplete="name" required />
         </label>
-        <label for="modalContactEmail">Email address
-          <input id="modalContactEmail" name="email" type="email" autocomplete="email" required />
+        <label for="modalContactPhone">Phone number
+          <input id="modalContactPhone" name="phone" type="tel" autocomplete="tel" required />
         </label>
         <label for="modalContactTopic">Enquiry topic
           <select id="modalContactTopic" name="topic" required>
@@ -240,8 +230,8 @@ function openContactModal(trigger) {
         <label for="modalContactMessage">Your message
           <textarea id="modalContactMessage" name="message" required>${product ? `I would like to know more about ${product}.` : ""}</textarea>
         </label>
-        <button class="button button-gold" type="submit">Continue by email <span class="button-arrow" aria-hidden="true">→</span></button>
-        <p class="form-note">Nothing is sent until you review and send the message in your email app.</p>
+        <button class="button button-gold" type="submit">Continue on WhatsApp <span class="button-arrow" aria-hidden="true">→</span></button>
+        <p class="form-note">Nothing is sent until you press send in WhatsApp.</p>
       </form>
     </div>`;
   modal.showModal();
@@ -258,7 +248,7 @@ function openProductModal(productKey) {
       <button class="modal-close" type="button" aria-label="Close product details" data-modal-close>×</button>
       <img class="modal-product-image" src="${product.image}" alt="${product.alt}" />
       <div>
-        <span class="eyebrow">Simba Cement product</span>
+        <span class="eyebrow">Supplied by Micheal Onyango Factory</span>
         <h2 id="siteModalTitle">${product.title}</h2>
         <p>${product.summary}</p>
         <p><strong>Applications:</strong> ${product.applications}</p>

@@ -1784,3 +1784,103 @@
           display: block;
         }
       }
+
+      /* Micheal Onyango Factory wordmark */
+      .brand-mark {
+        width: 48px;
+        height: 48px;
+        display: grid;
+        flex: 0 0 auto;
+        place-items: center;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #ffe08a, var(--gold) 45%, var(--gold-deep));
+        box-shadow: 0 6px 18px rgba(242, 197, 65, 0.35), inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+        color: var(--night);
+        font-family: var(--display);
+        font-size: 20px;
+        font-weight: 800;
+        letter-spacing: -0.04em;
+        transition: transform 300ms ease;
+      }
+
+      .brand:hover .brand-mark {
+        transform: rotate(-8deg) scale(1.06);
+      }
+
+      .brand-text {
+        display: grid;
+        line-height: 1;
+        color: var(--white);
+        font-family: var(--display);
+        text-transform: uppercase;
+      }
+
+      .brand-text strong {
+        font-size: 22px;
+        letter-spacing: -0.01em;
+      }
+
+      .brand-text small {
+        margin-top: 4px;
+        color: var(--gold);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.42em;
+      }
+
+      .site-header {
+        background: linear-gradient(100deg, #1b2150, var(--simba-blue) 60%, #3a4590);
+      }
+
+      .site-header::after {
+        position: absolute;
+        right: 0;
+        bottom: -1px;
+        left: 0;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, var(--gold), #ff9f43, var(--gold), transparent);
+        background-size: 200% 100%;
+        animation: headerLine 6s linear infinite;
+        content: "";
+      }
+
+      @keyframes headerLine {
+        to { background-position: -200% 0; }
+      }
+
+      .primary-nav .nav-phone {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--gold);
+      }
+
+      .primary-nav .nav-phone:hover {
+        color: #ffe08a;
+      }
+
+      .footer .brand-text strong {
+        font-size: 24px;
+      }
+
+      @media (max-width: 600px) {
+        .brand-mark {
+          width: 40px;
+          height: 40px;
+          font-size: 17px;
+        }
+
+        .brand-text strong {
+          font-size: 18px;
+        }
+
+        .brand-text small {
+          font-size: 10px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .site-header::after {
+          animation: none;
+        }
+      }
