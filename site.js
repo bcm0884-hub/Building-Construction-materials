@@ -6,9 +6,9 @@ if (headerContainer) {
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="container nav-wrap">
-        <a class="brand" href="index.html" aria-label="Micheal Onyango Factory home">
-          <span class="brand-mark" aria-hidden="true">MO</span>
-          <span class="brand-text"><strong>Micheal Onyango</strong><small>Factory</small></span>
+        <a class="brand" href="index.html" aria-label="Simba Cement home">
+          <span class="brand-mark" aria-hidden="true">SC</span>
+          <span class="brand-text"><strong>Simba Cement</strong><small>Dispatch &amp; supply</small></span>
         </a>
         <button
           class="menu-toggle"
@@ -39,11 +39,11 @@ if (footerContainer) {
       <div class="container">
         <div class="footer-grid">
           <div class="footer-brand-block">
-            <a class="brand" href="index.html" aria-label="Micheal Onyango Factory home">
-          <span class="brand-mark" aria-hidden="true">MO</span>
-          <span class="brand-text"><strong>Micheal Onyango</strong><small>Factory</small></span>
+            <a class="brand" href="index.html" aria-label="Simba Cement home">
+          <span class="brand-mark" aria-hidden="true">SC</span>
+          <span class="brand-text"><strong>Simba Cement</strong><small>Dispatch &amp; supply</small></span>
         </a>
-            <p class="footer-about">Micheal Onyango Factory supplies Simba Cement 32.5R and Simba Power 42.5N to builders, contractors and hardware stores. Call or WhatsApp for prices and delivery.</p>
+            <p class="footer-about">Simba Cement 32.5R and Simba Power 42.5N for builders, contractors and hardware stores. Call or WhatsApp Micheal on 0726 866 998 for prices and dispatch.</p>
           </div>
           <div>
             <h2>Explore</h2>
@@ -57,14 +57,14 @@ if (footerContainer) {
           <div>
             <h2>Get in touch</h2>
             <div class="footer-links">
-              <a href="tel:+254726866998">0726 866 998</a>
-              <a href="https://wa.me/254726866998" target="_blank" rel="noopener">WhatsApp us</a>
+              <a href="tel:+254726866998">Call Micheal: 0726 866 998</a>
+              <a href="https://wa.me/254726866998" target="_blank" rel="noopener">WhatsApp Micheal</a>
               <a href="contact.html">Full contact details</a>
             </div>
           </div>
         </div>
         <div class="footer-bottom">
-          <p>© <span data-current-year></span> Micheal Onyango Factory. Built by Jayden. Independent supplier, not the official National Cement website.</p>
+          <p>© <span data-current-year></span> Simba Cement dispatch. Built by Jayden. Independent supplier, not the official National Cement website.</p>
           <p>Product specifications and availability: confirm with National Cement Company Limited.</p>
         </div>
       </div>
@@ -126,7 +126,7 @@ if (projectSelector && projectResult) {
   const projectGuidance = {
     general: "Simba Cement 32.5R is for general-purpose applications. Check that the selected cement meets your project specification.",
     specialist: "Simba Power 42.5N is for specialized construction, including bridges, towers, pavements, highways and high-rise structures. Consult your engineer and project specification.",
-    unsure: "Call Micheal Onyango Factory on 0726 866 998 for product guidance and confirm the grade with your project engineer before purchase or use.",
+    unsure: "Call Micheal on 0726 866 998 for product guidance and confirm the grade with your project engineer before purchase or use.",
   };
 
   const showProjectGuidance = () => {
@@ -170,7 +170,7 @@ const productModalContent = {
 function openWhatsAppDraft(form) {
   const formData = new FormData(form);
   const message = [
-    `Micheal Onyango Factory enquiry: ${formData.get("topic")}`,
+    `Hi Micheal, Simba Cement enquiry: ${formData.get("topic")}`,
     `Name: ${formData.get("name")}`,
     `Phone: ${formData.get("phone")}`,
     "",
@@ -211,7 +211,7 @@ function openContactModal(trigger) {
       <button class="modal-close" type="button" aria-label="Close enquiry form" data-modal-close>×</button>
       <span class="eyebrow">Talk to our team</span>
       <h2 id="siteModalTitle">Send an enquiry</h2>
-      <p class="modal-intro">Complete the form to open a WhatsApp message to Micheal Onyango Factory on 0726 866 998. Prefer to talk? <a class="text-link" href="tel:+254726866998" style="display:inline-flex">Call now</a></p>
+      <p class="modal-intro">Complete the form to open a WhatsApp message to Micheal on the Simba Cement dispatch line, 0726 866 998. Prefer to talk? <a class="text-link" href="tel:+254726866998" style="display:inline-flex">Call now</a></p>
       <form class="contact-form modal-contact-form" data-modal-contact-form>
         <label for="modalContactName">Your name
           <input id="modalContactName" name="name" autocomplete="name" required />
@@ -248,7 +248,7 @@ function openProductModal(productKey) {
       <button class="modal-close" type="button" aria-label="Close product details" data-modal-close>×</button>
       <img class="modal-product-image" src="${product.image}" alt="${product.alt}" />
       <div>
-        <span class="eyebrow">Supplied by Micheal Onyango Factory</span>
+        <span class="eyebrow">Simba Cement</span>
         <h2 id="siteModalTitle">${product.title}</h2>
         <p>${product.summary}</p>
         <p><strong>Applications:</strong> ${product.applications}</p>
